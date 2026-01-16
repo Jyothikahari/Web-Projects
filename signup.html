@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boutique - Signup</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="promo-bar">✨ Free shipping on orders above ruppees 1000 · 20% OFF with code: SAVE20 ✨</div>
+
+  <header class="main-header">
+    <h1 class="logo">Boutique</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li id="login-link"><a href="login.html">Login</a></li>
+        <li id="signup-link"><a href="signup.html">Signup</a></li>
+        <li id="user-menu" style="display: none;">
+          <span id="username"></span>
+          <a href="#" id="logout">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="auth-container">
+    <h1>Sign Up</h1>
+    <form class="auth-form" id="signupForm">
+      <input type="text" id="username" placeholder="Your Username" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="password" id="password" placeholder="Your Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="auth-message" id="signupMessage"></p>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Boutique. All rights reserved.</p>
+  </footer>
+  <script src="signup.js"></script>
+</body>
+</html>
